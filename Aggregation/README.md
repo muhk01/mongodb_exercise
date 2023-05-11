@@ -56,6 +56,10 @@ db.employees_dept.aggregate([
 		averageSalary: {$avg: "$salary"}} },
 	{$sort: {averageSalary: -1}}
 ])
+[
+  { _id: 'Marketing', averageSalary: 75000 },
+  { _id: 'Sales', averageSalary: 55000 }
+]
 ```
 
 
