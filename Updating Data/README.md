@@ -62,6 +62,10 @@ to delete the data use ***remove*** and specify keys in the collections.
 exercise> db.employees.remove({"name":"Jessica"})
 DeprecationWarning: Collection.remove() is deprecated. Use deleteOne, deleteMany, findOneAndDelete, or bulkWrite.
 { acknowledged: true, deletedCount: 1 }
+```
+
+check the data again to makesure data is removed.
+```
 exercise> db.employees.find()
 [
   {
