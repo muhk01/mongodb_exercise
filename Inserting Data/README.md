@@ -64,7 +64,8 @@ db.employees.insertMany([
 ## FETCHING DATA IN MONGODB
 
 using find() to return all data within collections.
-'''
+
+```
 exercise> db.employees.find()
 [
   {
@@ -99,5 +100,5 @@ exercise> db.employees.find()
     phone: '555-555-5555'
   }
 ]
-'''
+```
 
