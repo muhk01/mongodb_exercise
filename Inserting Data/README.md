@@ -2,7 +2,7 @@
 
 ## INSERTING DATA IN MONGODB (insertone)
 
-''
+```
 exercise> db.employees.insertOne({
 ...   name: "John Doe",
 ...   age: 30,
@@ -12,10 +12,10 @@ exercise> db.employees.insertOne({
   acknowledged: true,
   insertedId: ObjectId("645d262b481da6ba377c466d")
 }
-''
+```
 
 ## INSERTING DATA IN MONGODB (insertMany)
-''
+```
 db.employees.insertMany([
 ...   {
 ...     name: "John Doe",
@@ -51,4 +51,4 @@ db.employees.insertMany([
     '2': ObjectId("645d26df481da6ba377c4671")
   }
 }
-''
+```
