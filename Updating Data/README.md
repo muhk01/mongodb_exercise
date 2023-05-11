@@ -1,5 +1,6 @@
 # Updating Data within the Database
 
+## Changing data values
 using ***$set*** to update data.
 
 ```
@@ -52,3 +53,42 @@ exercise> db.employees.find()
   }
 ]
 ```
+
+## Deleting the data
+
+to delete the data use ***remove*** and specify keys in the collections.
+
+```
+exercise> db.employees.remove({"name":"Jessica"})
+DeprecationWarning: Collection.remove() is deprecated. Use deleteOne, deleteMany, findOneAndDelete, or bulkWrite.
+{ acknowledged: true, deletedCount: 1 }
+exercise> db.employees.find()
+[
+  {
+    _id: ObjectId("645d26df481da6ba377c466f"),
+    name: 'John Doe',
+    age: 35,
+    email: 'john.doe@example.com'
+  },
+  {
+    _id: ObjectId("645d26df481da6ba377c4670"),
+    name: 'Jane Smith',
+    age: 30,
+    address: {
+      street: '123 Main St',
+      city: 'New York',
+      state: 'NY',
+      zipcode: '10001'
+    }
+  },
+  {
+    _id: ObjectId("645d26df481da6ba377c4671"),
+    username: 'bob_johnson',
+    password: 'password123',
+    name: { first: 'Bob', last: 'Johnson' },
+    email: 'bob.johnson@example.com',
+    phone: '555-555-5555'
+  }
+]
+```
+
