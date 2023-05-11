@@ -22,7 +22,7 @@ exercise> db.employees.insertOne({
 
 ## INSERTING DATA IN MONGODB (insertMany)
 
-Inserting multiple record using insertMany. in mongoDB the collection could having different structure unlike RDBMS which has schema noSQL is Schemaless
+Inserting multiple record using insertMany. in mongoDB the collection could having different structure unlike RDBMS which has schema, whereas noSQL is Schemaless
 ```
 db.employees.insertMany([
 ...   {
