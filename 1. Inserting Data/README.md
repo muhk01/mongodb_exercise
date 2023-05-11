@@ -1,6 +1,6 @@
 # INSERTING DATA IN MONGODB
 
-Through mongosh create new db as 'excercise'
+Through mongosh shell in cmd create new db as 'excercise'
 
 ```
 use excercise
