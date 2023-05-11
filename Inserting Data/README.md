@@ -1,6 +1,12 @@
 # INSERTING DATA IN MONGODB
 
+Through mongosh create new db as 'excercise'
+'''
+use excercise
+'''
+
 ## INSERTING DATA IN MONGODB (insertone)
+Inserting single record in collection in mongoDB collection is same as table in RDBMS, 
 
 ```
 exercise> db.employees.insertOne({
@@ -15,6 +21,8 @@ exercise> db.employees.insertOne({
 ```
 
 ## INSERTING DATA IN MONGODB (insertMany)
+
+Inserting multiple record using insertMany. in mongoDB the collection could having different structure unlike RDBMS which has schema noSQL is Schemaless
 ```
 db.employees.insertMany([
 ...   {
