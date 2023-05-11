@@ -1,9 +1,10 @@
 # INSERTING DATA IN MONGODB
 
 Through mongosh create new db as 'excercise'
-'''
+
+```
 use excercise
-'''
+```
 
 ## INSERTING DATA IN MONGODB (insertone)
 Inserting single record in collection in mongoDB collection is same as table in RDBMS, 
